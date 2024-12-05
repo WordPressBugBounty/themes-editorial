@@ -4,9 +4,9 @@ Theme URI:          https://mysterythemes.com/wp-themes/editorial/
 Author:             Mystery Themes
 Author URI:         https://mysterythemes.com/
 Description:        Editorial is a ultimate responsive magazine style Free WordPress theme. Suitable for online magazines, newspaper, publishing, personal blogs and any kind of sites. It is completely built on Customizer which allows you to customize most of the theme settings easily with live previews. It is fully widgetized theme so as to let users manage the website using the easy to use widgets. It is a flexible and powerful theme, which provides a lot of customization possibilities to the users. Get the demo at https://demo.mysterythemes.com/editorial-demos/
-Version:            1.5.0
+Version:            1.5.1
 Requires at least:  4.7
-Tested up to:       6.3
+Tested up to:       6.7
 Requires PHP:       5.6
 License:            GNU General Public License v3 or later
 License URI:        http://www.gnu.org/licenses/gpl-3.0.html
@@ -660,13 +660,21 @@ h1.entry-title a {
 .tag article.hentry,
 .category article.hentry,
 .blog article.hentry {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px dashed #DDD;
+  margin-bottom: 30px;
+  padding-bottom: 0;
+  border-bottom: 1px solid #DDD;
 }
 
 .blog article.hentry:first-child {
   margin-top: 30px;
+}
+
+.archive-desc-wrapper {
+  margin-top: 10px;
+}
+
+.single #content {
+  margin-bottom: 40px;
 }
 
 article.hentry .edit-link {

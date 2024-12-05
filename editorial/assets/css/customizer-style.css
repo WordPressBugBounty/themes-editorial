@@ -163,12 +163,16 @@
 /*=================================================
             Dashicons
 =================================================*/
-.customize-pane-parent .control-section .accordion-section-title:before {
+.customize-pane-parent .control-section .accordion-section-title::before {
   font-family: dashicons;
   content: "\f103";
   font-size: 20px;
   margin-right: 5px;
   vertical-align: middle;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -15px;
 }
 
 #accordion-section-theme_upsell .accordion-section-title:before {
@@ -205,4 +209,37 @@
 
 #accordion-section-custom_css .accordion-section-title:before {
   content: "\f499";
+}
+
+#accordion-section-theme_upsell .accordion-section-title::before {
+  content: "\f529";
+}
+
+.customize-pane-parent .control-section .accordion-section-title {
+    position: relative;
+    padding: 15px 40px 15px 40px;
+}
+
+.customize-pane-parent .control-section .accordion-section-title button.accordion-trigger{
+    padding: 0;
+}
+
+.customize-pane-parent .control-section .accordion-section-title button.accordion-trigger:hover,
+.customize-pane-parent .control-section .accordion-section-title button.accordion-trigger:focus,
+.customize-pane-parent .control-section .accordion-section-title button.accordion-trigger:active {
+    background: none !important;
+    color: #50575e !important;
+}
+
+#accordion-section-theme_upsell .accordion-section-title {
+    padding: 12px 15px 20px 40px;
+    line-height: 22px;
+}
+
+#accordion-section-theme_upsell .accordion-section-title::after {
+    display: none;
+}
+
+.customize-control #editorial-img-container li img:hover {
+  cursor: pointer;
 }
